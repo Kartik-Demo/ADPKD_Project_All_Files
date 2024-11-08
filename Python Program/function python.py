@@ -1,0 +1,11 @@
+x="78109payel pal94900"
+print(x.index("payel"))
+print(x.find("pal"))
+print(x.isupper())
+print(x.islower())
+print(x.upper())
+print(x.lower())
+print(x.strip("781094"))
+print(x.lstrip("78109"))
+print(x.rstrip("94900"))
+print(len(x))
