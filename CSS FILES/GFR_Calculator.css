@@ -1,0 +1,96 @@
+/* Full height styling for the background image */
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Background image styling */
+.background-container {
+    background-image: url('GFR_BGpicture.jpg'); /* Replace with your actual image path */
+    background-size: cover; /* Ensures the image covers the entire container */
+    background-position: center; /* Centers the image */
+    height: 80vh; /* Full viewport height */
+    display: flex; /* Use flexbox for alignment */
+    align-items: flex-start; /* Align items to the top */
+    padding: 20px; /* Add padding for inner spacing */
+    position: relative; /* Relative positioning for child elements */
+}
+
+/* Logo and Title Container */
+.logo-title-container {
+    display: flex; /* Flexbox to align logo and title */
+    align-items: center; /* Center items vertically */
+}
+
+.logo {
+    width: 50px; /* Adjust size as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 10px; /* Space between logo and title */
+    border-radius: 0; /* Ensure no circular shape */
+    object-fit: contain; /* Adjusts the image to fit without distortion */
+}
+
+/* Title styling */
+.form-title {
+    font-size: 2rem;
+    color: #00a6a6; /* Title color */
+}
+
+/* Form container styling */
+.form-container {
+    background: rgba(220, 220, 255, 0.9); /* Slightly transparent light blue background */
+    padding: 30px; /* Increased padding for aesthetics */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative; /* Ensure proper stacking */
+    margin: -190px auto 20px auto;
+    z-index: 2; /* Higher z-index to ensure it appears above the background */
+}
+
+/* Submit button custom styling */
+.btn-submit {
+    background: linear-gradient(135deg, #00a6a6, #00c6ff);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2rem; /* Increased font size */
+    border-radius: 5px;
+    width: 100%;
+    transition: background 0.3s, transform 0.3s; /* Transition for hover effects */
+}
+
+.btn-submit:hover {
+    background: linear-gradient(135deg, #00c6ff, #00a6a6);
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* Slider container styling */
+.slider-container {
+    width:auto;
+    height:auto; /* Fixed height for the slider */
+    overflow: hidden; /* Prevent overflow from the slides */
+    margin: -45px auto 20px auto;
+}
+
+/* Fixed height for slider images */
+.carousel-item img {
+    height: 100%; /* Full height of the container */
+    width: 100%; /* Full width of container */
+    object-fit: cover; /* Ensure images cover the area without distortion */
+}
+
+/* Footer styling */
+.footer {
+    background: rgba(0, 0, 0, 0.8); /* Dark background for footer */
+    color: white; /* White text color */
+    text-align: center; /* Centered text */
+    padding: 10px 0; /* Padding for footer */
+    position: relative; /* Relative positioning */
+    z-index: 1; /* Ensure footer is above other content */
+}
+
+/* Content section padding */
+.content {
+    padding: 20px;
+}

@@ -1,0 +1,234 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+/* Header Background Image */
+.background-image {
+    background-image: url('Home.jpg'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh; /* Adjust height as needed */
+    position: relative;
+    width: 100%;
+}
+
+/* Top Left Icon and Text */
+.top-left-icon {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.top-left-icon img {
+    width: 35px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+/* Rectangle Below Icon */
+.below-icon-rectangle {
+    position: absolute;
+    top: 70px;
+    left: 20px;
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 20px;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Paragraph Below Rectangle */
+.paragraph-container {
+    position: absolute;
+    top: 120px;
+    left: 20px;
+    max-width: 400px;
+    padding: 10px;
+    color: white;
+    font-size: 20px;
+    text-align: left;
+}
+
+/* Square Overlay in the Blank Page Portion */
+.square-overlay {
+    margin-top: -60px; /* Adjust as needed to position below header */
+    width: 250px;
+    padding: 20px;
+    background-color: rgb(79, 255, 255); /* Light gray background for contrast */
+    opacity: 0.9;
+    color: #333; /* Text color */
+    border: 1px solid #ddd; /* Border for definition */
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    position: relative;
+    left: 20px;
+    z-index: 1; /* Bring it above other elements */
+}
+
+/* Title within the square overlay */
+.square-overlay h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #006699; /* Unique color for title text */
+    text-align: center;
+}
+
+/* Horizontal Line Styling */
+.horizontal-line {
+    border: none;
+    border-top: 2px solid #006699; /* Matching color for line */
+    margin: 10px 0; /* Space above and below line */
+    width: 100%;
+}
+
+/* Text List Styling */
+.text-list {
+    list-style-type: none;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333; /* Text color */
+}
+
+.text-list li {
+    padding: 5px 0;
+}
+
+/* Combined Rectangle Styling */
+.combined-rectangle {
+    display: flex; /* Align sections side by side */
+    justify-content: space-between; /* Space between sections */
+    margin: 20px; /* Margin around the rectangle */
+    padding: 20px;
+    background-color: rgb(79, 255, 255); /* White background for the combined rectangle */
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    position: absolute; /* Changed to absolute */
+    top: 532px; /* Position it below the header */
+    right: 30px; /* Adjust as needed */
+    width: calc(80% - 50px); /* Full width minus margins */
+    height: 10cm;
+    z-index: 2; /* Ensure it's above other content */
+}
+
+/* Adjust styles for links in ADPKD and GFR sections */
+.combined-rectangle a {
+    text-decoration: none; /* Remove underline from links */
+    color: inherit; /* Inherit text color from parent elements */
+    display: flex; /* Make link a flex container */
+    flex-direction: column; /* Stack image and text */
+    align-items: center; /* Center items */
+}
+
+.adpkd, .gfr-calculator {
+    text-align: center;
+    flex: 1; /* Equal space for both sections */
+}
+
+/* Images in Rectangles */
+.rectangle-image {
+    width: 80px; /* Adjust size as needed */
+    height: 80px; /* Adjust size as needed */
+}
+
+/* Big Text */
+.big-text {
+    font-size: 48px; /* Make 'G' and 'A' bigger */
+    font-weight: bold;
+    color: #006699; /* Color for the big letters */
+}
+
+/* Title in Rectangles */
+.gfr-calculator h3, .adpkd h3 {
+    font-size: 18px;
+    color: #333; /* Text color for titles */
+}
+
+/* Additional Styles for Footer */
+.page-footer {
+    background-color: #333; /* Dark footer background */
+    color: white; /* Footer text color */
+    padding: 20px 0; /* Padding for footer */
+}
+
+.footer-content {
+    display: flex; /* Flexbox for layout */
+    justify-content: space-around; /* Space between sections */
+    max-width: 1200px; /* Set a maximum width */
+    margin: auto; /* Center the footer content */
+}
+
+.footer-section {
+    flex: 1; /* Allow sections to grow equally */
+    margin: 0 10px; /* Space between sections */
+}
+
+.footer-section h3 {
+    font-size: 20px; /* Font size for section titles */
+    margin-bottom: 10px; /* Space below titles */
+}
+
+.footer-section p, .footer-section ul {
+    font-size: 14px; /* Font size for paragraph and list items */
+}
+
+/* Styling for Quick Links */
+.footer-section.links ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
+}
+
+.footer-section.links li {
+    margin-bottom: 8px; /* Space between links */
+}
+
+/* Footer Bottom */
+.footer-bottom {
+    text-align: center; /* Center the text */
+    padding: 10px 0; /* Padding for the bottom */
+    font-size: 12px; /* Smaller text size */
+    background-color: #222; /* Slightly darker background for the bottom */
+}
+
+/* Hover Effects for Links */
+.footer-section a {
+    color: #00CCFF; /* Color for links */
+    text-decoration: none; /* Remove underline */
+}
+
+.footer-section a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column; /* Stack sections on smaller screens */
+        align-items: center; /* Center align items */
+    }
+    
+    .footer-section {
+        margin-bottom: 20px; /* Space below each section */
+    }
+}
+
+
+.link-container .description {
+    display: none; /* Hide descriptions initially */
+    transition: all 0.5s ease; /* Smooth transition for the sliding effect */
+}
